@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Задание 3</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+        <header>
+            <div class="smt">
+                <a href=""><img src="imgonline-com-ua-Resize-jRpcDk2FJP.png" class="logo" alt="Логотип"></a>
+                <h1>Веб страница для курса Web UI</h1>
+            </div>
+            <hr>
+        </header>
+            <div class="content">
+                <nav class="menu">
+                    <a href="#linkedlist">Список гиперссылок</a>
+                    <a href="#table">Таблица</a>
+                    <a href="#form">Форма</a>
+                </nav>
+                <a id="linkedlist"></a>
+                    <ol class="linkedlist">
+                        <li><a href="http://example.com">абсолютная гиперссылка на главную страницу сайта example.com</a></li>
+                        <li><a href="https://example.com">абсолютная на главную сайта example.com в протоколе https;</a></li>
+                        <li><a href="ftp://ftp.intel.com/readme.txt">ссылка на файл на сервере FTP без авторизации;</a></li>
+                        <li><a href="ftp://user:123456@example.ru/examples/main.txt">ссылка на файл на сервере FTP с авторизацией</a></li>
+                        <li><a href="https://oir.mobi/uploads/posts/2021-05/1622062787_6-oir_mobi-p-priroda-rossii-priroda-krasivo-foto-6.jpg">ссылка на фрагмент страницы некоторого сайта</a></li>
+                        <li><a href="#footer">ссылка на фрагмент текущей страницы(конец страницы)</a></li>
+                        <li><a href="https://www.onlinestor.com?product=socks&color=black&size=m">ссылка с двумя параметрами в URL</a></li>
+                        <li><nav>
+                                <a href="index.html" title="Главная">Главная</a><br>
+                                <a href="#footer" title="Подвал сайта">Подвал сайта</a><br>
+                                <a href="#image" title="Картинка">Цветок</a><br>
+                                <a href="#map" title="Карта">Карта</a><br>
+                            </nav>
+                        </li>
+                        <li><a>ссылка без href</a></li>
+                        <li><a href="">ссылка с пустым href=""</a></li>
+                        <li><a href="https://example.com" rel=nofollow>ссылка, по которой запрещен переход поисковикам</a></li>
+                        <li><a href="https://example.com"><!--noindex-->ссылка запрещенная для индексации поисковиками<!--/noindex--></a></li>
+                        <li>Тег <a href="#footer">&lt;footer&gt;</a> задаёт «подвал» сайта или раздела, в нём может располагаться имя автора, дата документа, контактная и правовая информация.</li> <!-- контекстная ссылка в тексте -->
+                        <li><a href="image.jpg" id="image"><img src="image.jpg" alt="Цветок"></a></li><!-- ссылка-изображение -->
+                        <li><map name="map0">
+                                <area shape="rect" coords="22,31,345,170" href="https://https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D1%8F%D0%BC%D0%BE%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA" alt="Прямоугольник">
+                                <area shape="circle" coords="566,115,66" href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D1%83%D0%B3" alt="Круг">
+                                <area shape="poly" coords="55,225,586,335,55,335" href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D1%8F%D0%BC%D0%BE%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA" alt="Прямоугольный треугольник">
+                            </map>
+                            <a id="map"></a><img src="mymap.png" usemap="#map0" alt="Map">
+                        </li>
+                        <li><a href="form.html">относительная ссылка на страницу в текущем каталоге</a></li>
+                        <li><a href="about/aboutpage.html">относительная ссылка на страницу в каталоге about</a></li>
+                        <li><a href="../example.html">относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+                        <li><a href="../../enoughexample.html">относительная ссылка на страницу в каталоге двумя уровнями вышe</a></li>
+                        <li><a href="index.html">сокращенная ссылка на главную</a></li>
+                        <li><a href="demo.html">сокращенная ссылка на внутреннюю.</a></li>
+                    </ol>
+
+                <a id="table"></a>
+                <table class="tabletask">
+                    <caption>Популярность языков программирования</caption>
+                    <tr>
+                        <th>Позиция сентябрь 2022</th>
+                        <th>Позиция сентябрь 2021</th>
+                        <th>Название</th>
+                        <th>Популярность в %</th>
+                        <th>Изменение популярности в %</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>C</td>
+                        <td>15.95%</td>
+                        <td>+0.74%</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>Java</td>
+                        <td>13.48%</td>
+                        <td>-3.18%</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">3</td>
+                        <td>Python</td>
+                        <td>10.47%</td>
+                        <td>+0.59%</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">4</td>
+                        <td>C++</td>
+                        <td>7.11%</td>
+                        <td rowspan="2">~+1.33%</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">5</td>
+                        <td>C#</td>
+                        <td>4.58%</td>
+                    </tr>
+                </table>
+                <a id="form"></a>
+                <form>
+                    <label>
+                    Имя:<br>
+                    <input name="field-name-1">
+                    </label><br>
+                    <label>
+                        Текстовое поле email:<br>
+                        <input name="field-email" type="email">
+                    </label><br>
+                    <label>
+                        Текстовое поле даты:<br>
+                        <input name="field-date" value="2020-09-09" type="date">
+                    </label><br>
+                    Пол:<br>
+                    <label><input type="radio" checked="checked" name="radio-group-1"/>Мужской</label>
+                    <label><input type="radio" name="radio-group-1"/>Женский</label><br>
+                    Количество конечностей:<br>
+                    <label><input type="radio" checked="checked" name="radio-group-1"/>1</label>
+                    <label><input type="radio" name="radio-group-1"/>2</label>
+                    <label><input type="radio" name="radio-group-1"/>3</label>
+                    <label><input type="radio" name="radio-group-1"/>4</label>
+                    <label><input type="radio" name="radio-group-1"/>5</label>
+                    <label><input type="radio" name="radio-group-1"/>2</label>
+                    <label><input type="radio" name="radio-group-1"/>6</label>
+                    <label><input type="radio" name="radio-group-1"/>7</label>
+                    <label><input type="radio" name="radio-group-1"/>8</label><br>
+                    <label>
+                        Сверхспособности:
+                        <br>
+                        <select name="field-name-4[]"
+                            multiple="multiple">
+                            <option value="Значение1">Бессмертие</option>
+                            <option value="Значение2" selected="selected">Прохождение через стены</option>
+                            <option value="Значение3" selected="selected">Левитация</option>
+                        </select>
+                    </label><br>
+                    <label>
+                        Биография:<br>
+                        <textarea name="field-name-2"></textarea>
+                    </label><br>
+                    Чекбокс:<br />
+                    <label><input type="checkbox" name="check-1">C контрактом ознакомлен</label><br>
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+        </div>
+        <footer>
+            <a id="footer"></a>
+            <p>&#169; Илья Агошков 2020
+        </footer>
+    </body>
+</html>
